@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.executables = ['googlepub']
 
   s.files = Dir['lib/**/*', 'bin/*','googlepub.gemspec'] + %w( README.md LICENSE )
-  s.homepage    = 'http://rubygems.org/gems/googlepub'
+  s.homepage    = 'https://github.com/thekeshavgoel/googlepub'
   s.license     = 'MIT'
   s.required_ruby_version = '>= 1.9.2'
   s.add_dependency 'base64', '~> 1.0', '>= 1.0.1'

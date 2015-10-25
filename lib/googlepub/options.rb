@@ -63,10 +63,10 @@ Email: keshu_gl@yahoo.com
     def parse_options
       @options = {"language" => "en-US"}
       @option_parser = OptionParser.new do |opts|
-        opts.on('-k', '--key [KEY]', 'Key for the Account from Google Developer Console (ENV['KEY'])') do |l|
+        opts.on('-k', '--key [KEY]', "Key for the Account from Google Developer Console (ENV['KEY'])") do |l|
           @options["language"] = l
         end
-        opts.on('-i', '--iss [ISSUER]', 'ISS for the Account from Google Developer Console (ENV['ISS'])') do |l|
+        opts.on('-i', '--iss [ISSUER]', "ISS for the Account from Google Developer Console (ENV['ISS'])") do |l|
           @options["language"] = l
         end
         opts.on('-p', '--package [PACKAGE]', "Package to update on the Google Developer Console (ENV['PACKAGE'])") do |pa|
