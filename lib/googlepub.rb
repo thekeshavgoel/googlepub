@@ -5,7 +5,7 @@ module Googlepub
 
   ROOT = File.expand_path(File.dirname(__FILE__) + '/..')
 
-  VERSION = "0.0.1"
+  VERSION = "0.0.2"
 
   def self.call_metadata(options = {})
     @pack = Googlepub::Metadata.new(options["language"])
