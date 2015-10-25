@@ -1,20 +1,28 @@
 # googlepub
+
 ## The gem to automate everything for GooglePlay Developer Console with a Single Command i.e. googlepub
 This gem uses the Google Publishing API.Go for it. A single command for everything. Have issues/problems/Feature requests/advices Please add them as Issues. I'll get back to you ASAP.
+## Set up Googlepub
+In your terminal:
+    `[sudo] gem install googlepub`
+For updates:
+    `[sudo] gem update googlepub`
+
+**This gem is OS independent.**
 
 ## Google Play Access
 
 To enable googlepub to access Google Play you have to follow these steps:
 
-*Open the Google Play Console
-*Open Settings => API-Access
-*Create a new Service Account - follow the link of the dialog
-*Create new Client ID
-*Select Service Account
-*Click Generate new P12 key and store the downloaded file
-*The Email address underneath Service account is the email address you have to enter as the Issuer
-*Back on the Google Play developer console, click on Grant Access for the newly added service account
-*Choose Release Manager from the dropdown and confirm
+* Open the Google Play Console
+* Open Settings => API-Access
+* Create a new Service Account - follow the link of the dialog
+* Create new Client ID
+* Select Service Account
+* Click Generate new P12 key and store the downloaded file
+* The Email address underneath Service account is the email address you have to enter as the Issuer
+* Back on the Google Play developer console, click on Grant Access for the newly added service account
+* Choose Release Manager from the dropdown and confirm
 
 ## Issuer
 Copy and paste the email address which looks like *9083982039lnwdnlwk-23929ojkn@developer.gserviceaccount.com* and pass it as the -i or --iss option with the command or paste it when asked for or set as ENV['ISS']
@@ -24,7 +32,7 @@ Copy and paste the email address which looks like *9083982039lnwdnlwk-23929ojkn@
 Store your p12 file in a secure place, for ease open it in any editor and copy and pass the key as -k or --key option with the command or paste it when asked for or set as ENV['KEY']
 
 ## Package
-The SKU of you App eg. "com.keshav.goel". Pass is as -p or --package option with the command or when asked for or set as ENV['package']
+The SKU of you App eg. "com.keshav.goel". Pass is as -p or --package option with the command or when asked for or set as ENV['PACKAGE']
 
 ##Main commands
 apk
@@ -75,10 +83,10 @@ googlepub metadata -l "en-US" -p "com.keshav.goel" --store -t "Title" -s "Short 
 
 googlepub apk -p "com.keshav.goel" --file "file.apk" --track "beta"
 
-**If ENV['KEY'] or -k/--key is not passed, the command will ask for key pass it as "-----KEY---"**
-**If ENV['ISS'] or -i/-iss  is not passed, the command will ask for iss pass it as"iss@account.com"**
-**If ENV['PACKAGE'] or -p/--package is not passed, the command will ask for package pass it as "com.keshav.goel"**
+* **If ENV['KEY'] or -k/--key is not passed, the command will ask for key pass it as "-----KEY---"**
+* **If ENV['ISS'] or -i/-iss  is not passed, the command will ask for iss pass it as"iss@account.com"**
+* **If ENV['PACKAGE'] or -p/--package is not passed, the command will ask for package pass it as "com.keshav.goel"**
 
-## In-App purchase support coming in a few days.
+### In-App purchase support coming in a few days.
 
-### For any issues/problems please add an Issue to the repo.
+##### For any issues/problems please add an Issue to the repo.
