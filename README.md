@@ -5,6 +5,7 @@ This gem uses the Google Publishing API.Go for it. A single command for everythi
 ## Set up Googlepub
 In your terminal:
     `[sudo] gem install googlepub`
+
 For updates:
     `[sudo] gem update googlepub`
 

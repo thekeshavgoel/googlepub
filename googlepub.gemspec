@@ -20,6 +20,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'jwt/json', '~> 0'
   s.add_dependency 'httparty', '~> 0.13.5'
   s.add_dependency 'httmultiparty', '~> 0.13.6'
-  s.add_dependency 'openssl', '~> 0.9.4'
   s.add_dependency 'colorize', '~> 0.7.7'
 end
