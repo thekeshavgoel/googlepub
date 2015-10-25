@@ -2,9 +2,7 @@ require "base64"
 require 'jwt'
 require 'jwt/json'
 require 'httparty'
-require 'getoptlong'
 require 'httmultiparty'
-require 'yaml'
 require 'colorize'
 
 module Googlepub
