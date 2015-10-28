@@ -86,7 +86,7 @@ Email: keshu_gl@yahoo.com
         opts.on('--store', 'Specify that Store Listing details are to be Updated.') do |s|
           @options["store"] = s
         end
-        opts.on('-t', '--title [TITLE]', 'Name for your App') do |k|
+        opts.on('-t', '--title [TITLE]', 'Name for your App/In-App') do |k|
           @options["title"] = k
         end
         opts.on('-f', '--full  [FULLDESCRIPTION]', 'Full Description for your App/Description for your In-App') do |t|

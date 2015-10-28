@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.version     = Googlepub::VERSION
   s.date        = '2015-10-25'
   s.summary     = "GooglePlay App Publisher!"
-  s.description = "CLI googlepub. Automate everything related to Google App Publishing, APK, Store Listing and In-App Purchases."
+  s.description = "CLI googlepub. Automate everything related to Google App Publishing: APK, Store Listing and In-App Purchases."
   s.author     = ["Keshav Goel"]
   s.email       = 'keshu_gl@yahoo.com'
   s.require_paths = ['lib']
