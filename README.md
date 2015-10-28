@@ -3,6 +3,7 @@
 ## The gem to automate everything for GooglePlay Developer Console with a Single Command i.e. googlepub
 Store Listing, APK, In-App Purchases, this does it all. This gem uses the Google Publishing API.
 Have issues/problems/Feature requests/advices Please add them as Issues. I'll get back to you ASAP.
+
 ## Set up Googlepub
 In your terminal:
     `[sudo] gem install googlepub`
