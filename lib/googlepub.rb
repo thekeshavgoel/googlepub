@@ -1,11 +1,12 @@
 require File.expand_path(File.dirname(__FILE__) + '/googlepub/metadata.rb')
 require File.expand_path(File.dirname(__FILE__) + '/googlepub/apk.rb')
+require File.expand_path(File.dirname(__FILE__) + '/googlepub/inapps.rb')
 
 module Googlepub
 
   ROOT = File.expand_path(File.dirname(__FILE__) + '/..')
 
-  VERSION = "0.0.3"
+  VERSION = "0.0.4"
 
   def self.call_metadata(options = {})
     @pack = Googlepub::Metadata.new(options["language"])
@@ -72,6 +73,23 @@ module Googlepub
     @apk = Googlepub::APK.new(@file, @track)
     @apk.upload_apk
     @apk.select_version(@version)
+
+  end
+
+  def self.call_inapps(options = {})
+    if !options["sku"]
+      puts "SKU (Product Id) of the In-App Purchase (eg: \"com.keshav.inapp.001\"):"
+      @sku = gets.chomp
+    else
+      @sku = options["sku"]
+    end
+    @iap = Googlepub::Inapps.new(@sku, options["language"])
+    @iap.find_inapp
+    if options["price"] || options["title"] || options["description"]
+      @iap.edit_inapp(options)
+    else
+      puts "No option passed to Edit the In-App"
+    end
 
   end
 

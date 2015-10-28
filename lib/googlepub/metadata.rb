@@ -1,6 +1,3 @@
-require "base64"
-require 'jwt'
-require 'jwt/json'
 require 'httparty'
 require 'httmultiparty'
 require 'colorize'
@@ -15,7 +12,7 @@ module Googlepub
       @access_token = ENV['ACCESS_TOKEN']
       @package = ENV['PACKAGE']
       if !@edit_id || !@access_token || !@package
-        p "Missing Something, Invalid call".red
+        p "Missing Authorization, Invalid call".red
       end
       get_listing
       get_details

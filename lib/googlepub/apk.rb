@@ -1,6 +1,3 @@
-require "base64"
-require 'jwt'
-require 'jwt/json'
 require 'httparty'
 require 'httmultiparty'
 require 'colorize'
@@ -15,7 +12,7 @@ module Googlepub
       @edit_id = ENV['EDIT_ID']
       @access_token = ENV['ACCESS_TOKEN']
       @package = ENV['PACKAGE']
-      if !@edit_id || !@access_token || @package
+      if !@edit_id || !@access_token || !@package
         p "Invalid call".red
       end
       if !File.new(@file)
